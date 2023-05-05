@@ -3,7 +3,7 @@ USER default
 EXPOSE 8080
 ENV RACK_ENV production
 ENV RAILS_ENV production
-COPY ./views /opt/app-root/src/
+COPY ./views/main.erb /opt/app-root/src/views
 
 USER root
 RUN chmod og+rw /opt/app-root/src/db
