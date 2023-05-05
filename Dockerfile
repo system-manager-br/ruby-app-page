@@ -4,7 +4,6 @@ EXPOSE 8080
 ENV RACK_ENV production
 ENV RAILS_ENV production
 COPY . /opt/app-root/src/
-CMD ["scl", "enable", "./run.sh"]
 
 USER root
 RUN chmod og+rw /opt/app-root/src/db
